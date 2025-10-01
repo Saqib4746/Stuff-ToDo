@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+  --background: #6485a554;         /* soft light gray for clean background */
+  --secondaryBackground: #ffffff; /* white cards/containers for contrast */
+  --text: #1f2937;               /* dark neutral gray for easy reading */
+  --purple: #0ab858;             /* elegant indigo/purple accent */
+  --teal: #14b8a6;               /* fresh teal for highlights/buttons */
+}
+
+
+body{
+    background-image: url("./img/Doddles.png");
+    background-size: cover;
+    background-color: var(--background);
+    color: var(--text);
+}
+
+.container{
+    border: 2px solid var(--purple);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     margin-top: 120px;
+     max-width: 600px;
+     margin: 60px auto 0 auto;
+     padding: 20px;
+     background: rgba(150, 199, 196, 0.2); /* teal with transparency */
+  backdrop-filter: blur(20px);          /* blur effect */
+  -webkit-backdrop-filter: blur(20px); /* Safari support */
+
+  /* optional: subtle shadow */
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.stats{
+    
+    padding: 30px;
+    border-radius: 20px;
+    border: 2px solid var(--purple);
+    display: flex; 
+    gap: 20px;
+    width: 100% ;
+    /* background: rgba(150, 199, 196, 0.2); /* teal with transparency */
+  backdrop-filter: blur(20px);          /* blur effect */
+  -webkit-backdrop-filter: blur(20px); /* Safari support */
+
+  /* optional: subtle shadow */
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1); 
+}
+.details{
+    width: 100%;
+    
+}
+.details h1{
+    font-size: 50px;
+    font-weight: bolder;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    
+}
+.progerss-bar{
+    width: 100%;
+    height: 10px;
+    background-color: var(--secondaryBackground);
+    border-radius: 5px;
+    margin-top: 20px;
+
+}
+#progress{
+    width: 50%;
+    height: 10px;
+    background-color: var(--teal);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+#counter{
+    width: 100px;
+    height: 100px;
+    background-color: var(--teal);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 35px;
+    font-weight: bolder;
+    color: antiquewhite;
+
+}
+
+form{
+    margin-top: 60px;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+input{
+    flex: 1 ;
+    padding: 16px;
+    background: var(--secondaryBackground);
+    border: 1px solid var(--teal);
+    border-radius: 10px;
+    outline: none;
+    color: var(--text);
+
+}
+button{
+    padding:16px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--teal);
+    color: var(--text);
+    font-size: 30px;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+}
+#task-list{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 30px;
+    width: 100%;
+    list-style: none;
+   
+}
+.taskItem{
+    display: flex;
+    background-color: var(--secondaryBackground);
+    padding: 10px;
+    border-radius: 10px;
+    justify-content: space-between;
+     border: 1px solid black
+}
+.task{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.completed p{
+    text-decoration: line-through;
+    color: var(--teal)
+}
+
+.task input{
+    width: 20px;
+    height: 20px  ;
+}
+.taskItem img{
+    width: 24px;
+    height: 24px;
+    margin: 0 10px;
+cursor: pointer;
+}
+.taskItem img:hover{
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+    filter: brightness(0.8);
+}
+
+
