@@ -1,6 +1,6 @@
 # Stuff-ToDo
 
-I built a simple yet functional ToDo App where you can:
+I built a simple yet functional ToDo App named Stuff ToDo in HTML CSS and Java Script  where you can:
 
 ✍️ Enter and add tasks
 
